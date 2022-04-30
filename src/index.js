@@ -84,15 +84,16 @@ callStorage(section) {
     this.render();
 },
 showTask (task) {
-    const taskContainer = document.createElement('div');
-    const taskTitle = document.createElement('span');
+    const taskContainer = document.createElement('tr');
+    const taskTitle = document.createElement('td');
     taskTitle.textContent = task.title
-    const taskDueDate = document.createElement('span');
+    const taskDueDate = document.createElement('td');
     taskDueDate.textContent = task.dueDate
-    const taskStatus = document.createElement('button');
+    const taskStatus = document.createElement('td');
     taskStatus.textContent = task.status
-
-    taskContainer.append(taskTitle,taskDueDate,taskStatus)
+    const taskdelete = document.createElement('td');
+    taskdelete.innerHTML = `<input type="checkbox">`
+    taskContainer.append(taskTitle,taskDueDate,taskStatus, taskdelete)
     this.tasks.appendChild(taskContainer);
 },
 showProject (project){
@@ -100,6 +101,7 @@ showProject (project){
     projectContainer.innerHTML=project;
     projectContainer.setAttribute("id", project)
     projectContainer.setAttribute("class", "button")
+    
     this.projectList.appendChild(projectContainer)
 },
 showTaskForm (){
