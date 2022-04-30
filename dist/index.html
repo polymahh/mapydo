@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <h1>MappyDo</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div style="flex-wrap:nowrap" class="three columns"   >
+                <div class="menumin" style="margin-bottom: 20px;">
+                    <button id="home" class="button-primary" style="margin-bottom: 20px;">Home</button>
+                    <button id="today" class="button-primary" style="margin-bottom: 20px;">Today</button>
+                    <button id="weekly" class="button-primary" >weekly</button>
+                </div>
+                <div class="menumin" style="min-height: 130px;">
+                    <div style="display:inline ;text-align: left; margin-bottom: 30px;">
+
+                        <button id="projectButton" style="width:auto;height: auto;border-radius: 16px;">+</button>
+
+                    </div>
+                    <div id="projectForm" style="display:none; text-align: left; margin-top: 10px;">
+                            <label for="projectTitle">ADD Project :</label>
+                            <input style="width:-webkit-fill-available;" placeholder="Training" id="projectTitle">
+                            <div style="flex-wrap:nowrap">
+                                <button id="projectClose" style="width:auto;background-color: #ff4c4c; margin: 3px;float: right;">X</button>
+                                <button id="projectSave"  style="width:auto;background-color: #40ff77; margin: 3px;float: right;">✓</button>
+                            </div>
+
+                    </div>
+                    <div id="projectList" style=" text-align: left; margin-top: 10px;">
+
+                    </div>
+                </div>
+            </div>
+            <div  style="flex-wrap:nowrap" class="nine columns "   >
+                <h3 id="sectionTitle">section</h3>
+                <div id="tasks">
+                    
+                    <!-- tasks show here  -->
+                </div>
+                <hr>
+                <span>
+                    <button id="taskButton" style="width:auto;height: auto;border-radius: 16px;">+</button>
+                    <strong> ADD Task</strong>
+                </span>
+                <div id="taskForm" style="display: none;">
+                    <hr>
+                    <div>
+                        <div class="six columns">
+                            <label for="taskTitle">Title</label>
+                            <input placeholder="walk Dog" id="taskTitle">
+                        </div>
+                        <div class="six columns">
+                            <label for="dueDate">Due date: </label>
+                            <input class="u-full-width" type="date" id="dueDate" name="dueDate">
+                        </div>
+                    </div>
+                    <div style="padding-top: 70px;">
+                        <label for="taskDescription">Description</label>
+                        <textarea class="u-full-width" placeholder="take the dog ..." id="taskDescription"></textarea>
+                    </div>
+                    <div>
+                        <button id="close" class="six columns" style="width:auto;background-color: #ff4c4c;float: right; margin: 3px;">Close</button>
+                        <button id="save" class="six columns" style="width:auto;background-color: #40ff77;float: right; margin: 3px;">Save</button>
+                    </div>
+                    
+                     
+                </div>
+            </div>
+        </div>
+        <div id="project" class="row">
+            <div class="three columns" >
+             
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
