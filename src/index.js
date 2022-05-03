@@ -65,6 +65,13 @@ bindEvents (){
     this.closeProject.addEventListener('click', (e) => this.hideProjectForm(e));
     this.saveProject.addEventListener('click', (e) => this.hideProjectForm(e));
     this.projectList.addEventListener('click', (e) => this.callStorage(e.target.id));
+    this.tasks.addEventListener('click', (e) => {
+        
+        if(e.target.matches("#done")){
+            this.taskDone(e)
+        }else console.log('dis'+ e)
+    }
+    );
 
 },
 render (){
@@ -85,6 +92,7 @@ callStorage(section) {
 },
 showTask (task) {
     const taskContainer = document.createElement('tr');
+    taskContainer.id = task.title;
     const taskTitle = document.createElement('td');
     taskTitle.textContent = task.title
     const taskDueDate = document.createElement('td');
@@ -93,6 +101,8 @@ showTask (task) {
     taskStatus.textContent = task.status
     const taskdelete = document.createElement('td');
     taskdelete.innerHTML = `<input type="checkbox">`
+    taskdelete.id = 'done'
+    
     taskContainer.append(taskTitle,taskDueDate,taskStatus, taskdelete)
     this.tasks.appendChild(taskContainer);
 },
@@ -138,6 +148,13 @@ hideProjectForm(e){
        }
         
     }
+},
+taskDone(task){
+    console.log(task)
+
+},
+taskDiscripton(task){
+    console.log('discription')
 },
 
 

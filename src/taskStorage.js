@@ -6,19 +6,19 @@ const home =[
         title: 'ffff',
         discription: 'ffff',
         dueDate: 'ffff',
-        status: 'ffff',
+        status: false,
     },
     {
         title: 'ffff',
         discription: 'ffff',
         dueDate: 'ffff',
-        status: 'ffff',
+        status: false,
     },
     {
         title: 'ffff',
         discription: 'ffff',
         dueDate: 'ffff',
-        status: 'ffff',
+        status: false,
     }
 ]
 const today =[
@@ -26,19 +26,19 @@ const today =[
         title: 'ddd',
         discription: 'ddd',
         dueDate: 'ddd',
-        status: 'ddd',
+        status: false,
     },
     {
         title: 'ddd',
         discription: 'ddd',
         dueDate: 'ddd',
-        status: 'ddd',
+        status: false,
     },
     {
         title: 'ddd',
         discription: 'ddd',
         dueDate: 'ddd',
-        status: 'ddd',
+        status: false,
     }
 ]
 const weekly =[
@@ -46,19 +46,19 @@ const weekly =[
         title: 'dddfff',
         discription: 'dddfff',
         dueDate: 'dddfff',
-        status: 'dddfff',
+        status: false,
     },
     {
         title: 'dddfff',
         discription: 'dddfff',
         dueDate: 'dddfff',
-        status: 'dddfff',
+        status: false,
     },
     {
         title: 'dddfff',
         discription: 'dddfff',
         dueDate: 'dddfff',
-        status: 'dddfff',
+        status: false,
     }
 ]
 
