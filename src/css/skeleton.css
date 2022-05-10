@@ -379,6 +379,39 @@ form {
     
   }
 
+  .taskbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .done{
+    color: gray;
+    accent-color: gray;
+    text-decoration: line-through;
+  }
+  #slidingMenu{
+    position: absolute;
+    overflow: auto;
+    display: block;
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform .4s;
+
+  }
+  
+
+    #slidingMenu a {
+      display: block;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+      background-color: rgb(203, 245, 255);
+      text-align: center
+      }
+
+    #slidingMenu a:hover {
+      color: #FFFFFF;
+      background-color: #00A4BD;
+      }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
